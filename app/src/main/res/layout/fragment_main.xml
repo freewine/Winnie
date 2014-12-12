@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity$PlaceholderFragment"
+    android:textAlignment="textStart">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="还剩"
+        android:id="@+id/textView"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="50sp"
+        android:textColor="#FFF" />
+
+    <TextView android:text="@string/zero"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/nowCount"
+        android:background="@drawable/white_circle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="40sp"
+        android:layout_below="@+id/textView"
+        android:textColor="#fff"
+        android:gravity="center" />
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:text="-50"
+        android:id="@+id/minus50"
+        android:layout_marginTop="30dp"
+        android:elevation="2dp"
+        android:background="@drawable/round_button"
+        android:layout_below="@+id/nowCount"
+        android:layout_alignStart="@+id/nowCount"
+        android:textColor="@color/pink_a200"
+        android:textSize="20sp"/>
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:text="+50"
+        android:id="@+id/plus50"
+        android:elevation="2dp"
+        android:background="@drawable/round_button"
+        android:layout_alignTop="@+id/minus50"
+        android:layout_alignEnd="@+id/nowCount"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="History"
+        android:id="@+id/BtnHistory"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_access_time_white_36dp"
+        android:layout_alignTop="@+id/nowCount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>

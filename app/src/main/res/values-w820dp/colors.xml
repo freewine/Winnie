@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="deep_purple_100">#D1C4E9</color>
+    <color name="deep_purple_500">#673AB7</color>
+    <color name="deep_purple_700">#512DA8</color>
+    <color name="pink_a100">#FF80AB</color>
+    <color name="pink_a200">#FF4081</color>
+    <color name="pink_a400">#F50057</color>
+</resources>
